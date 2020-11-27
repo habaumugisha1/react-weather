@@ -1,0 +1,45 @@
+/* form{
+    margin-top:1rem;
+} */
+form input[name="city"],
+form input[name="country"]{
+    background-color: transparent;
+    color: white;
+    border: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-bottom: 2px solid whitesmoke;
+    border-radius: 0;
+}
+form button{
+    margin-top: 10px;
+}
+form input::placeholder{
+    color: rgb(244, 247, 250);
+}
+
+form input:focus {
+    border: none;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+.container{
+
+    background-color: teal;
+    height: 80vh;
+    border: none;
+    padding: 30px;
+    width: 100vw;
+
+}
+.app{
+    margin-top: 0;
+}
+.form{
+    height: 25vh;
+    border: none;
+}
+.img-fluid{
+    width: 10vw;
+    height: 10vw;
+}
