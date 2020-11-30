@@ -2,6 +2,7 @@
   text-align: center;
   width: 100vw;
   background-color: teal;
+  position: absolute;
 }
 body{
   background-color: aqua;

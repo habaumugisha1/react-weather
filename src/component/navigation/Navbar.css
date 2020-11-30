@@ -1,0 +1,58 @@
+.NabarItems{
+    min-height: 80px;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.NabarItems .log{
+    margin-left: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: crimson;
+}
+.NabarItems ul{
+    list-style: none;
+    margin-right: 50px;
+}
+.NabarItems ul li{
+    display: inline-block;
+    /* margin-right: 50px; */
+}
+.NabarItems ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: crimson;
+    opacity: 0.7;
+    padding: 0 15px;
+    /* margin-right: 50px; */
+}
+.NabarItems ul li a:hover{
+    color: white;
+    opacity: 1;
+    background-color: teal;
+    padding: 80px 20px;
+}
+.NabarItems .close, .NabarItems .menu{
+    cursor: pointer;
+    text-transform: uppercase;
+    border:  1px solid crimson;
+    padding: 10px 20px;
+    margin-right: 20px;
+    display: none;
+}
+.NabarItems .close{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    border-radius: 5px;
+}
+
+section{
+    /* min-height: calc(100vh - 80px); */
+    width: 100vw;
+}

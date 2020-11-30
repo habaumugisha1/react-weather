@@ -2,7 +2,7 @@ import React from 'react'
 import './form.style.css'
 const Form = props => {
     return(
-        <div className="container form">
+        <div className="form">
         <div>{props.error?error():null}</div>
         <form onSubmit={props.loadweather}>
         <div className="row">

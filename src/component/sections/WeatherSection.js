@@ -1,5 +1,6 @@
 import React from 'react'
-import './form.style.css'
+// import './form.style.css'
+import '../form.style.css'
 const Weather = (props) => {
     return(
         <div className="container">

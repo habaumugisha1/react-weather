@@ -1,15 +1,16 @@
 import React from 'react'
-import {BrowserRouter as Router} from 'react-router-dom'
-import Weather from './component/Weather'
-import './App.css';
+// import {BrowserRouter as Router} from 'react-router-dom'
+import WeatherSection from './sections/WeatherSection'
+// import './App.css';
+import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Form from './component/form.component';
-import Food from './Food'
-import Navbar from './component/navigation/Navbar'
+import Form from './form.component';
+// import Food from './Food'
+// import Navbar from './component/navigation/Navbar'
 
 const API_key = 'ef476b209998f6874e729c4400b0e08b'
 
-class App extends React.Component {
+class Weather extends React.Component {
   constructor(){
     super();
     this.state = {
@@ -23,10 +24,6 @@ class App extends React.Component {
       icon: undefined,
       error: false
     };
-    // this.getWeather();
-    // this.weatherIcon={
-    //   Thunderstorm:"wi-thunderstorm"
-    // }
   }
   calCelsius(temp){
     let cell = Math.floor(temp - 273.15);
@@ -58,18 +55,18 @@ class App extends React.Component {
 
   render(){
     return (
-      <Router>
+    //   <Router>
         <div className="App">
-          <Navbar />
+          {/* <Navbar /> */}
           {/* <Food /> */}
-          {/* <Form loadweather={this.getWeather} error={this.state.error}/>
-          < Weather city={this.state.city} country={this.state.country} temp_celsius={this.state.celsius} temp_max={this.state.temp_max} temp_min={this.state.temp_min} description={this.state.description}
+          <Form loadweather={this.getWeather} error={this.state.error}/>
+          < WeatherSection city={this.state.city} country={this.state.country} temp_celsius={this.state.celsius} temp_max={this.state.temp_max} temp_min={this.state.temp_min} description={this.state.description}
           icon={this.state.icon}
-          /> */}
+          />
         </div>
-    </Router>
+    // </Router>
   );
   }
 }
 
-export default App;
+export default Weather;
